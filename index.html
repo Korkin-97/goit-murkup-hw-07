@@ -15,55 +15,105 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/old-styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
     <header class="header">
-      <div class="container main-header">
-        <a href="./index.html" class="link logo">
-          <span class="prymary-brand">WEB</span>STUDIO</a
+      <div class="container">
+        <a class="link logo" href="./index.html"
+          ><span class="prymary-brand">WEB</span>STUDIO</a
         >
-        <!-- navigation -->
-        <div class="mobile-menu">
-          <nav class="main-nav">
+        <button class="button menu" type="button" data-menu-open>
+          <svg class="menu-hamburher" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-hamburher"></use>
+          </svg>
+        </button>
+
+        <!-- ----------------NAVIGATION----------------- -->
+
+        <div class="mobile-menu" data-menu>
+          <div class="menu-container">
+            <button class="button close-button" type="button" data-menu-close>
+              <svg class="close-menu" width="8" height="8">
+                <use href="./images/icons.svg#icon-cross"></use>
+              </svg>
+            </button>
             <ul class="site-nav list">
-              <li class="item">
-                <a href="./index.html" class="link current">Studio</a>
+              <li class="list-nav">
+                <a href="./index.html" class="link-nav link current">Studio</a>
               </li>
-              <li class="item">
-                <a href="./portfolio.html" class="link">Portfolio</a>
+              <li class="list-nav">
+                <a href="./portfolio.html" class="link-nav link">Portfolio</a>
               </li>
-              <li class="item"><a href="#" class="link">Contacts</a></li>
+              <li class="list-nav">
+                <a href="#" class="link-nav link">Contacts</a>
+              </li>
             </ul>
-          </nav>
+
+            <!-- ----------------CONTACTS----------------- -->
+
+            <ul class="contacts list">
+              <li class="contacts-list">
+                <a class="contacts-link link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="contacts-list">
+                <a class="contacts-link link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+            <ul class="social-list list">
+              <li class="social-list-item">
+                <a href="#" class="link">
+                  <svg class="social-list-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list-item">
+                <a href="#" class="link">
+                  <svg class="social-list-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list-item">
+                <a href="#" class="link">
+                  <svg class="social-list-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list-item">
+                <a href="#" class="link">
+                  <svg class="social-list-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <!-- mail and tel -->
-        <ul class="mail-tel list">
-          <li class="item">
-            <a class="link header-mail" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="item">
-            <a class="link header-tel" href="tel:+11(000)111-11-11"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-        </ul>
       </div>
     </header>
     <main>
-      <!-- hero -->
-      <div class="hero-bg">
+      <!-- <div class="hero-bg">
         <div class="container">
-          <section class="hero">
-            <h1 class="hero-title">Effective Solutions for Your Business</h1>
-            <button type="button" class="btn" data-modal-open>
+          <section class="hero overlay">
+            <h1 class="title">Effective Solutions for Your Business</h1>
+            <button type="button" class="order-button button" data-modal-open>
               Order Service
             </button>
             <div class="backdrop is-hidden" data-modal>
               <div class="modal">
-                <button type="button" class="close-modal" data-modal-close>
+                <button
+                  type="button"
+                  class="close-button button"
+                  data-modal-close
+                >
                   <svg width="8" height="8">
                     <use href="./images/icons.svg#icon-cross"></use>
                   </svg>
@@ -155,9 +205,9 @@
             </div>
           </section>
         </div>
-      </div>
-      <!-- benefits -->
-      <section class="section">
+      </div> -->
+
+      <!-- <section class="section benefits-section">
         <div class="container">
           <h2 class="title visually-hidden">Benefits</h2>
           <ul class="benefits-list list">
@@ -167,7 +217,7 @@
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="list-title">Strategy</h3>
+              <h3 class="title">Strategy</h3>
               <p class="text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
@@ -179,7 +229,7 @@
                   <use href="./images/icons.svg#icon-clock1"></use>
                 </svg>
               </div>
-              <h3 class="list-title">Punctuality</h3>
+              <h3 class="title">Punctuality</h3>
               <p class="text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
@@ -191,7 +241,7 @@
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="list-title">Diligence</h3>
+              <h3 class="title">Diligence</h3>
               <p class="text">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
@@ -203,7 +253,7 @@
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="list-title">Technologies</h3>
+              <h3 class="title">Technologies</h3>
               <p class="text">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
@@ -211,9 +261,9 @@
             </li>
           </ul>
         </div>
-      </section>
-      <!-- activity -->
-      <section class="section activity-section">
+      </section> -->
+
+      <!-- <section class="section activity-section">
         <div class="container">
           <h2 class="title">What Are We Doing</h2>
           <ul class="activity-list list">
@@ -243,11 +293,11 @@
             </li>
           </ul>
         </div>
-      </section>
-      <!-- team -->
-      <section class="section team-section">
+      </section> -->
+
+      <!-- <section class="section team-section">
         <div class="container">
-          <h2 class="title">Our Team</h2>
+          <h2 class="title team-title">Our Team</h2>
           <ul class="team-list list">
             <li class="item">
               <img
@@ -419,49 +469,49 @@
             </li>
           </ul>
         </div>
-      </section>
-      <!-- customers -->
-      <section class="section customers-section">
+      </section> -->
+
+      <!-- <section class="section customers-section">
         <div class="container">
-          <h2 class="title">Customers</h2>
-          <ul class="list social-list">
+          <h2 class="title title-customers">Customers</h2>
+          <ul class="list customer-list">
             <li class="item-customers">
-              <a href="#" class="link icon-customers">
+              <a href="#" class="link">
                 <svg class="icon" width="104" height="56">
                   <use href="./images/icons.svg#icon-Logo_1"></use>
                 </svg>
               </a>
             </li>
             <li class="item-customers">
-              <a href="#" class="link icon-customers">
+              <a href="#" class="link">
                 <svg class="icon" width="104" height="56">
                   <use href="./images/icons.svg#icon-Logo_2"></use>
                 </svg>
               </a>
             </li>
             <li class="item-customers">
-              <a href="#" class="link icon-customers">
+              <a href="#" class="link">
                 <svg class="icon" width="104" height="56">
                   <use href="./images/icons.svg#icon-Logo_3"></use>
                 </svg>
               </a>
             </li>
             <li class="item-customers">
-              <a href="#" class="link icon-customers">
+              <a href="#" class="link">
                 <svg class="icon" width="104" height="56">
                   <use href="./images/icons.svg#icon-Logo_4"></use>
                 </svg>
               </a>
             </li>
             <li class="item-customers">
-              <a href="#" class="link icon-customers">
+              <a href="#" class="link">
                 <svg class="icon" width="104" height="56">
                   <use href="./images/icons.svg#icon-Logo_5"></use>
                 </svg>
               </a>
             </li>
             <li class="item-customers">
-              <a href="#" class="link icon-customers">
+              <a href="#" class="link">
                 <svg class="icon" width="104" height="56">
                   <use href="./images/icons.svg#icon-Logo_6"></use>
                 </svg>
@@ -469,17 +519,16 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
-    <!-- footer -->
-    <footer class="footer">
+
+    <!-- <footer class="footer">
       <div class="container">
         <div class="footer-list">
           <div class="item">
-            <a href="./index.html" class="link logo"
-              >WEB<span class="logo">STUDIO</span></a
+            <a class="link logo" href="./index.html">
+              <span class="prymary-brand">WEB</span>STUDIO</a
             >
-            <!-- wish -->
             <p class="footer-wish text">
               Increase the flow of customers and sales for your business with
               digital marketing & growth solutions.
@@ -488,7 +537,7 @@
           <div class="item">
             <div class="social-media">
               <p class="social-title">Social media</p>
-              <div class="social-list">
+              <div class="footer-social-list">
                 <div class="item-social">
                   <a href="#" class="link icon-link">
                     <svg class="icon-footer" width="24" height="24">
@@ -533,8 +582,8 @@
                   required
                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                 />
-                <button class="btn-send" type="submit">
-                  <span class="btn-text">Subscribe</span>
+                <button class="button-send button" type="submit">
+                  <span class="button-text">Subscribe</span>
                   <svg class="icon-send" width="24" height="20">
                     <use href="./images/icons.svg#icon-Subscribe"></use>
                   </svg>
@@ -544,7 +593,8 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
