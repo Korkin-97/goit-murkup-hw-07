@@ -1,0 +1,102 @@
+:root {
+  --navy-blue: #2e2f42;
+  --iris: #4d5ae5;
+  --slate: #434455;
+  --light-slate: #8e8f99;
+  --cornflower: #e7e9fc;
+  --cloud: #f4f4fd;
+  --green: #31d0aa;
+  --primary-white-color: #ffffff;
+  --ocean: #404bbf;
+}
+
+/* ******************************General Styles****************************** */
+
+body {
+  margin: auto;
+  padding: 0;
+
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+
+  color: var(--slate);
+  background-color: var(--primary-white-color);
+
+  min-width: 320px;
+}
+
+textarea {
+  resize: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.link {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.title {
+  font-weight: 700;
+  color: var(--navy-blue);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  margin: auto;
+}
+
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.container .logo {
+  color: var(--navy-blue);
+}
+
+.prymary-brand {
+  color: var(--iris);
+}
+
+/* ******************************Mobile****************************** */
