@@ -179,6 +179,7 @@ img {
 
 .hero {
   background-color: var(--navy-blue);
+  width: 1440px;
 }
 
 .order-button {
@@ -1411,11 +1412,19 @@ img {
     margin-right: 24px;
   }
 
-  .item-footer {
+  .item-footer-first {
     margin-right: 120px;
   }
 
   .footer-social {
     margin-right: auto;
+  }
+
+  .item-form {
+    margin-left: 80px;
+  }
+
+  .email-input {
+    margin-right: 24px;
   }
 }
