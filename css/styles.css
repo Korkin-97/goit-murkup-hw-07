@@ -114,7 +114,7 @@ img {
   color: var(--navy-blue);
 }
 
-.item .logo {
+.item-footer .logo {
   color: var(--cloud);
 }
 
@@ -246,6 +246,10 @@ img {
   position: absolute;
   left: 50%;
   top: 50%;
+
+  height: 579px;
+  max-height: 90vh;
+  overflow-y: scroll;
 
   border-radius: 4px;
   background-color: #fcfcfc;
@@ -689,11 +693,6 @@ img {
   background-color: var(--green);
 }
 
-.form-subscribe {
-  display: flex;
-  align-items: center;
-}
-
 .subscribe {
   font-weight: 500;
   line-height: 1.5;
@@ -893,7 +892,6 @@ img {
     height: 432px;
 
     margin: auto;
-    padding: 112px 56px;
 
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -986,17 +984,13 @@ img {
 
   /*____________________________________ footer  ____________________________________*/
 
-  .footer.section {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-
   .footer .container {
+    flex-direction: column;
     text-align: center;
     justify-content: center;
   }
 
-  .footer-list .item {
+  .container .item-footer {
     width: 268px;
 
     margin-left: auto;
@@ -1015,5 +1009,15 @@ img {
 @media screen and (max-width: 1200px) {
   .activity-section {
     display: none;
+  }
+
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .hero {
+    padding-top: 112px;
+    padding-bottom: 112px;
   }
 }
