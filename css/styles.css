@@ -750,7 +750,7 @@ img {
 
 /* ******************************Mobile****************************** */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   /*____________________________________ header ____________________________________*/
 
   .site-nav,
@@ -967,12 +967,6 @@ img {
     display: none;
   }
 
-  /*____________________________________ activity ____________________________________*/
-
-  .activity-section {
-    display: none;
-  }
-
   /*____________________________________ team  ____________________________________*/
 
   .team-list .item {
@@ -1011,10 +1005,15 @@ img {
   }
 
   .email-input {
-    width: 396px;
+    width: 100%;
     margin-bottom: 16px;
   }
+}
 
-  .button-send {
+/* ****************************** Mobile-Tablet ****************************** */
+
+@media screen and (max-width: 1200px) {
+  .activity-section {
+    display: none;
   }
 }
