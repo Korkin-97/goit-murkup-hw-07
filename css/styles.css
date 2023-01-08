@@ -95,6 +95,11 @@ img {
   margin: auto;
 }
 
+.section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
 .logo {
   font-family: Raleway, sans-serif;
   font-weight: 800;
@@ -275,6 +280,7 @@ img {
 }
 
 .form-title {
+  margin-top: 48px;
   margin-bottom: 16px;
 
   font-weight: 500;
@@ -745,6 +751,8 @@ img {
 /* ******************************Mobile****************************** */
 
 @media screen and (max-width: 768px) {
+  /*____________________________________ header ____________________________________*/
+
   .site-nav,
   .contacts {
     display: none;
@@ -757,14 +765,239 @@ img {
   .header .container {
     justify-content: space-between;
 
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding: 24px 16px;
   }
+
+  /*____________________________________ menu ____________________________________*/
 
   .menu.button {
     background-color: transparent;
     line-height: 0;
     padding: 0;
     border: none;
+  }
+
+  .mobile-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    z-index: 100;
+    overflow-y: scroll;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: auto;
+
+    background-color: var(--primary-white-color);
+  }
+
+  .mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: painted;
+  }
+
+  .menu-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    min-width: 428px;
+    min-height: 796px;
+    height: 100%;
+
+    padding: 40px;
+    margin: auto;
+
+    background-color: var(--primary-white-color);
+  }
+
+  .mobile-menu .site-nav {
+    display: block;
+    margin-top: 40px;
+    margin-bottom: auto;
+  }
+
+  .mobile-menu .contacts {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 48px;
+  }
+
+  .mobile-menu .link-nav {
+    display: flex;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+
+    color: var(--navy-blue);
+  }
+
+  .mobile-menu .list-nav:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  .mobile-menu .list-nav:last-child .link {
+    color: var(--ocean);
+  }
+
+  .mobile-menu .contacts-link {
+    display: flex;
+    font-size: 36px;
+    line-height: 1.1;
+    color: var(--ocean);
+  }
+
+  .mobile-menu .contacts-list:last-child .link {
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: var(--iris);
+  }
+
+  .mobile-menu .contacts-list:first-child .link {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+
+    color: var(--slate);
+  }
+
+  .social-list {
+    justify-content: space-between;
+    max-width: 328px;
+  }
+
+  .social-list-item {
+    width: 40px;
+    height: 40px;
+  }
+
+  .social-list-item .link {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+
+    background: var(--iris);
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*____________________________________ hero ____________________________________*/
+
+  .hero {
+    width: 100%;
+    height: 432px;
+
+    margin: auto;
+    padding: 112px 56px;
+
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Mobile/mobile-hero.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (-o-min-device-pixel-ratio: 2/1),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          from(rgba(46, 47, 66, 0.7)),
+          to(rgba(46, 47, 66, 0.7))
+        ),
+        url(../images/Mobile/mobile-hero@2x.jpg);
+      background-image: -o-linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/Mobile/mobile-hero@2x.jpg);
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/Mobile/mobile-hero@2x.jpg);
+    }
+  }
+
+  .hero .title {
+    max-width: 318px;
+    line-height: 1.11;
+
+    margin-bottom: 72px;
+  }
+
+  .order-button {
+    margin: auto;
+  }
+
+  .modal {
+    width: calc(100% - 36px);
+    max-width: 392px;
+
+    padding: 24px 16px;
+
+    transform: translate(-50%, -50%);
+  }
+
+  /*____________________________________ benefits ____________________________________*/
+
+  .benefits-section .container {
+    padding: 16px;
+  }
+
+  .benefits-list .item:not(:last-child) {
+    margin-bottom: 72px;
+  }
+
+  .benefits-list .title {
+    margin-bottom: 8px;
+  }
+
+  .benefits-icon {
+    display: none;
+  }
+
+  /*____________________________________ activity ____________________________________*/
+
+  .activity-section {
+    display: none;
+  }
+
+  /*____________________________________ team  ____________________________________*/
+
+  .team-list .item {
+    margin: auto;
+  }
+
+  .team-list .item:not(:last-child) {
+    margin-bottom: 72px;
+  }
+
+  /*____________________________________ customers  ____________________________________*/
+
+  .customer-list {
+    flex-basis: calc((100% - 16px) / 2);
+    gap: 72px 16px;
+  }
+
+  /*____________________________________ footer  ____________________________________*/
+
+  .footer .container {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .footer-wish {
+    margin-right: 0;
   }
 }
