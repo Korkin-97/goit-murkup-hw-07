@@ -719,7 +719,6 @@ img {
 
 .button-send {
   display: flex;
-  justify-content: center;
   align-items: center;
 
   padding: 8px 24px;
@@ -1268,6 +1267,10 @@ img {
 
   .item-footer-first {
     width: 264px;
+  }
+
+  .subscribe-field {
+    display: flex;
   }
 }
 
