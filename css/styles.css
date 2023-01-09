@@ -802,8 +802,8 @@ img {
     flex-direction: column;
     position: relative;
 
-    min-width: 428px;
-    min-height: 796px;
+    /* min-width: 428px; */
+    /* min-height: 796px; */
     height: 100%;
 
     padding: 40px;
