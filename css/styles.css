@@ -1001,7 +1001,7 @@ img {
 
 /* ****************************** Mobile-Tablet ****************************** */
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .activity-section {
     display: none;
   }
@@ -1028,7 +1028,7 @@ img {
 
 /* ****************************** Tablet ****************************** */
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
     padding: 0 16px;
     max-width: 768px;
