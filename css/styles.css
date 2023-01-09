@@ -689,8 +689,8 @@ img {
   justify-content: space-between;
 }
 
-.item .icon-link:hover,
-.item .icon-link:focus {
+.item-social .icon-link:hover,
+.item-social .icon-link:focus {
   background-color: var(--green);
 }
 
@@ -718,12 +718,13 @@ img {
 }
 
 .button-send {
-  /* display: flex;
+  display: flex;
   justify-content: center;
-  align-items: center; */
+  align-items: center;
 
   padding: 8px 24px;
 
+  width: 165px;
   cursor: pointer;
   border: none;
   border-radius: 4px;
